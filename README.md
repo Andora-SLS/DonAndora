@@ -1,3 +1,3 @@
 <p align="center"> 
-  <img src="images\Andora_Banner.png" />
+  <img src="images\Twitter.png" />
 </p>
