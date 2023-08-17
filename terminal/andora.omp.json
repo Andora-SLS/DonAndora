@@ -1,73 +1,49 @@
 {
-    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-    "version": 2,
-    "final_space": true,
-    "blocks": [
-      {
-        "type": "prompt",
-        "alignment": "left",
-        "segments": [
-          {
-            "type": "path",
-            "style": "diamond",
-            "powerline_symbol": "\ue0b0",
-            "foreground": "#ffffff",
-            "background": "#ff479c",
-            "leading_diamond": "\ue0b6",
-            "trailing_diamond": "\ue0b0",
-            "template": " \ue5ff {{ .Path }} ",
-            "properties": {
-              "style": "folder"
-            }
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#E36464",
+          "style": "plain",
+          "template": "@{{ .UserName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "#62ED8B",
+          "style": "plain",
+          "template": "\u279c",
+          "type": "text"
+        },
+        {
+          "foreground": "#56B6C2",
+          "properties": {
+            "style": "folder"
           },
-          {
-            "type": "git",
-            "style": "powerline",
-            "powerline_symbol": "\ue0b0",
-            "foreground": "#193549",
-            "background": "#fffb38",
-            "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
-            "properties": {
-              "fetch_stash_count": true,
-              "fetch_status": true,
-              "fetch_upstream_icon": true
-            }
+          "style": "plain",
+          "template": " {{ .Path }}",
+          "type": "path"
+        },
+        {
+          "foreground": "#D4AAFC",
+          "properties": {
+            "branch_icon": ""
           },
-          {
-            "type": "dotnet",
-            "style": "powerline",
-            "powerline_symbol": "\ue0b0",
-            "foreground": "#ffffff",
-            "background": "#6CA35E",
-            "template": " \ue70c {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }} ",
-            "properties": {
-              "fetch_version": true
-            }
-          },
-          {
-            "type": "root",
-            "style": "powerline",
-            "powerline_symbol": "\ue0b0",
-            "foreground": "#ffffff",
-            "background": "#ffff66",
-            "template": " \uf0e7 "
-          },
-          {
-            "type": "exit",
-            "style": "powerline",
-            "powerline_symbol": "\ue0b0",
-            "foreground": "#ffffff",
-            "background": "#2e9599",
-            "background_templates": [
-              "{{ if gt .Code 0 }}#f1184c{{ end }}"
-            ],
-            "trailing_diamond": "\ue0b4",
-            "properties": {
-              "always_enabled": true
-            }
-          }
-        ]
-      }
-    ]
-  }
-  
+          "style": "plain",
+          "template": " <#DDB15F>git(</>{{ .HEAD }}<#DDB15F>)</>",
+          "type": "git"
+        },
+        {
+          "foreground": "#DCB977",
+          "style": "plain",
+          "template": " \uf119",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
