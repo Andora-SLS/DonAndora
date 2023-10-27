@@ -1,0 +1,44 @@
+--------------- Install ---------------
+
+iwr -useb https://christitus.com/win | iex
+
+Adobe Acrobat
+Astro Command Center
+Discord
+Everything
+Firefox
+Git
+GitHub Desktop
+HEVC Video Extensions
+iCloud
+Logi Bolt
+Logitech Options
+Mircosoft 365 (Word, etc.)
+Visual Studio Code
+Visual Studio
+Mozilla Thunderbird
+GeForce Experience / NVIDIA Control Panel
+NZXT CAM
+Oh My Posh
+PowerShell
+PowerToys
+RustRover
+Rustup
+Snipping Tool
+Stardock Start11
+Terminal
+Voicemod
+Winget
+
+
+--------------- Oh My Posh ---------------
+
+terminal\Microsoft.PowerShell_profile.ps1
+- Modify Path for user.
+
+
+--------------- Cursor / Font ---------------
+
+cursur.zip
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
+

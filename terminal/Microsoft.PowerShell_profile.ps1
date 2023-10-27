@@ -1,4 +1,5 @@
 oh-my-posh init pwsh --config 'C:\Users\strat\AppData\Local\Programs\oh-my-posh\themes\andora.omp.json' | Invoke-Expression
+#oh-my-posh init pwsh --config 'C:\Users\strat\AppData\Local\Programs\oh-my-posh\themes\emodipt-extend.omp.json' | Invoke-Expression
 
 Import-Module Terminal-Icons
 Import-Module PSReadLine
@@ -18,10 +19,10 @@ function hcode () {
     code 'C:\Users\strat\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt'
 }
 
-function Leauge () {
-    start "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Riot Games\League of Legends.lnk"
+function pcode() {
+    code 'C:\Users\strat\Documents\PowerShell\Microsoft.PowerShell_profile.ps1'
 }
 
-function YouTube() {
-    start https://youtube.com/
+function christitustool() {
+    iwr -useb https://christitus.com/win | iex
 }
