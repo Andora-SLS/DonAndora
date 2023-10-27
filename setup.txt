@@ -4,7 +4,7 @@ iwr -useb https://christitus.com/win | iex
 
 Adobe Acrobat
 Astro Command Center
-Discord
+Discord + Vencord
 Everything
 Firefox
 Git
@@ -35,6 +35,10 @@ Winget
 
 terminal\Microsoft.PowerShell_profile.ps1
 - Modify Path for user.
+- Modules for PowerShell
+	- PSReadLine
+	- Terminal-Icons
+	- z
 
 
 --------------- Cursor / Font ---------------
